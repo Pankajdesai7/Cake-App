@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>
+
+        </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/css/cake_category.css">
+    </head>
+    <body>
+         <div class="container">
+             <% for( cake of category) {%>  
+            <div class="card">
+                <div class="imgBx">
+                    <img src="<%= cake.imgUrl %>" >
+                </div>
+                <div class="content">
+                     <h2><%= cake.name %></h2>
+                        <p>Eggless Rasmalai Cake is an extraordinary eggless rich cake made by
+                            using traditional Indian sweet rasmalai. 
+                        </p>
+                </div>
+            </div>
+            <%}%>
+         </div>
+         
+       
+        
+    </body>
+</html>

@@ -38,7 +38,7 @@ header .carousel-inner .item{
     
 }
 .banner1{
-    background-image: url(../images/cake3.jpg);
+    background-image: url(../images/home-cake1.jpg);
 }
 .banner2{
 
@@ -79,6 +79,11 @@ header .carousel-inner .item{
 .carousel-indicators .active{
     background-color: #edbb00;
     border-color: #edbb00;
+}
+@media only screen and (min-width:992px){
+    .nav > li.dropdown.open { position: static; } 
+    .nav > li.dropdown.open .dropdown-menu { display:table; width: 100%; text-align: center; left:0; right:0; } 
+    .dropdown-menu>li { display: table-cell; }
 }
 @media only screen and (min-width:768px) and (max-width:991px){
 
