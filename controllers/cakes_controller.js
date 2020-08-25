@@ -47,7 +47,25 @@ const cheese=[
 
     }
 ];
+const diet=[
 
+    {
+        name:'Keto Diet',
+        imgUrl:'/images/diet_cakes/keto.jpg',
+        cost:550
+    },
+    {
+        name:'Sugar Free',
+        imgUrl:'/images/diet_cakes/sugar.jpg',
+        cost:550
+    },
+    {
+        name:'Gluten Free',
+        imgUrl:'/images/diet_cakes/gluten.jpg',
+        cost:550
+    }
+
+];
 module.exports.singnatureCakes=function(req,res){
 
 
@@ -62,5 +80,12 @@ module.exports.cheeseCakes=function(req,res)
     return res.render('cakes_category',{
         title:'cheese',
         category:cheese
+    });
+}
+module.exports.dietCakes=function(req,res)
+{
+    return res.render('cakes_category',{
+        title:'Diet Cakes',
+        category:diet
     });
 }
